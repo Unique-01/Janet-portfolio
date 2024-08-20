@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "components/Home";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Projects from "components/Projects";
+import Experience from "components/Experience";
+import WhyHire from "components/WhyHire";
+import CaseStudy from "components/CaseStudy";
+import TestimonialCarousel from "components/Testimonials/TestimonialCarousel";
+import Discuss from "components/Discuss";
+import Footer from "components/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+            <Home />
+            <Projects />
+            <Experience/>
+            <WhyHire/>
+            <CaseStudy/>
+            <TestimonialCarousel/>
+            <Discuss/>
+            <Footer/>
+            {/* <div name="experience" className=" min-h-screen flex items-center">
+                Another one New
+            </div>
+            <div id="resume" className=" min-h-screen flex items-center">
+                Another one New
+            </div>
+            <div id="project" className=" min-h-screen flex items-center">
+                Another one New
+            </div>
+            <div id="contact" className=" min-h-screen flex items-center">
+                Another one New
+            </div> */}
+        </div>
+    );
 }
 
 export default App;
