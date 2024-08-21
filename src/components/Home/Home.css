@@ -1,19 +1,18 @@
-.star{
-    color: #FD853A;
+.star {
+    color: #fd853a;
     font-size: 1.3em;
 }
-.about{
+.about {
     color: #344054;
 }
 
-.semi{
-    background-color: #FEB273;
+.semi {
+    background-color: #feb273;
     position: absolute;
-    transform:translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     border-radius: 300px 300px 0 0;
     height: 250px;
     width: 500px;
     top: 74%;
     left: 50%;
-
 }

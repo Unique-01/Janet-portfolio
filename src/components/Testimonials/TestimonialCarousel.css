@@ -1,20 +1,15 @@
-.testimonial{
-  background: url("/src/assets/images/orange-wavy.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.8);
-  /* background-color: rgba(23, 23, 23, 0.8); Black background with 50% opacity */
-    background-blend-mode: overlay; 
-  /* padding: 50px; */
-  /* height: 100%; */
+.testimonial {
+    background: url("/src/assets/images/orange-wavy.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
 }
 
-
-.testimonial-card{
-  background-color: rgba(255, 255, 255, 0.1);
-  /* background-color: rgba(23, 23, 23, 0.6);  */
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.quote{
-  color: #6670854D;
+.quote {
+    color: #6670854d;
 }

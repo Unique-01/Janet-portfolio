@@ -1,7 +1,7 @@
 import ProjectCard from "components/Projects/ProjectCard";
-import Case1 from "assets/images/case-1.svg";
-import Case2 from "assets/images/case-2.svg";
-import Case3 from "assets/images/case-3.svg";
+import Case1 from "assets/images/case-1.webp";
+import Case2 from "assets/images/case-2.webp";
+import Case3 from "assets/images/case-3.webp";
 
 const CaseStudy = () => {
     const caseStudies = [
@@ -9,16 +9,19 @@ const CaseStudy = () => {
             title: "Campus Mart",
             image: Case1,
             type: "Mobile",
+            link: "https://www.behance.net/gallery/173611149/Ecommerce-App-(UIUX-Case-study)",
         },
         {
             title: "Osun Tour",
             image: Case2,
             type: "Website",
+            link: "https://www.behance.net/gallery/175182665/Tourism-Website",
         },
         {
             title: "Google Meet Redesign",
             image: Case3,
             type: "Website",
+            link: "https://www.behance.net/gallery/176473955/Google-Meet-Redesign",
         },
     ];
     return (
@@ -30,7 +33,7 @@ const CaseStudy = () => {
             </div>
             <div className="grid grid-cols-3 gap-20 px-16 mt-14">
                 {caseStudies.map((caseStudy, index) => (
-                    <ProjectCard project={caseStudy} width="w-64" />
+                    <ProjectCard key={index} project={caseStudy} />
                 ))}
             </div>
         </div>

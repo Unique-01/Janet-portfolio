@@ -1,6 +1,7 @@
 import Button from "components/Button";
 import "./Footer.css";
 import jdLogo from "assets/images/jd-logo.svg";
+import Resume from "assets/Janet-resume.pdf";
 import { Link } from "react-scroll";
 import { FaFacebookSquare } from "react-icons/fa";
 import { GrYoutube } from "react-icons/gr";
@@ -16,7 +17,10 @@ const Footer = () => {
                     <h2 className="font-semibold text-5xl">
                         Lets Connect there
                     </h2>
-                    <Button text="Hire me" />
+                    <Button
+                        text="Hire me"
+                        href="mailto:Janetdaramola1@gmail.com"
+                    />
                 </div>
                 <hr className="pb-10 border-gray-600" />
                 <div className="flex gap-56">
@@ -53,19 +57,53 @@ const Footer = () => {
                         <h4 className="text-primary text-sm">Navigation</h4>
                         <ul className="text-xs mt-4 gap-3 flex flex-col">
                             <li>
-                                <Link to="">Home</Link>
+                                <Link
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={400}
+                                    className="hover:cursor-pointer">
+                                    Home
+                                </Link>
                             </li>
                             <li>
-                                <Link to="">About Us</Link>
+                                <Link
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={400}
+                                    className="hover:cursor-pointer">
+                                    About Us
+                                </Link>
                             </li>
                             <li>
-                                <Link to="">Service</Link>
+                                <Link
+                                    to="experience"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-47}
+                                    duration={400}
+                                    className="hover:cursor-pointer">
+                                    Service
+                                </Link>
                             </li>
                             <li>
-                                <Link to="">Resume</Link>
+                                <a href={Resume} target="blank">
+                                    Resume
+                                </a>
                             </li>
                             <li>
-                                <Link to="">Project</Link>
+                                <Link
+                                    to="project"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={400}
+                                    className="hover:cursor-pointer">
+                                    Project
+                                </Link>
                             </li>
                         </ul>
                     </div>

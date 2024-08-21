@@ -4,42 +4,44 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialCard from "./TestimonialCard";
 import "./TestimonialCarousel.css";
-import Case1 from "assets/images/case-1.svg";
+import Paul from "assets/images/paul.webp";
+import John from "assets/images/john.webp";
+import Nia from "assets/images/user.webp";
+import Ethan from "assets/images/ethan.webp";
 
 const testimonials = [
     {
         name: "Paul Emurotu",
         position: "CEO, ACME",
         rating: 5.0,
-        image: Case1,
+        image: Paul,
         feedback:
             "Working with Janet was a game-changer for our startup. They took our vague ideas and turned them into a sleek, user-friendly product that our customers love. The attention to detail and creativity exceeded our expectations!",
     },
     {
         name: "John Dara",
         position: "CEO, Sumi Empire",
-        rating: 2.0,
-        image: Case1,
+        rating: 5.0,
+        image: John,
         feedback:
-            "Working with Janet was a game-changer for our startup. They took our vague ideas and turned them into a sleek, user-friendly product that our customers love. The attention to detail and creativity exceeded our expectations!",
+            "We've collaborated with many designers, but Janet stands out for her ability to understand our brand and deliver a product that not only looks amazing but also functions flawlessly. The process was smooth, and the results speak for themselves.",
     },
     {
-        name: "Olu lola",
-        position: "CEO, Sumi Empire",
-        rating: 3.0,
-        image: Case1,
+        name: "Ethan Hall",
+        position: "CEO at NovaTech",
+        rating: 5.0,
+        image: Ethan,
         feedback:
-            "Working with Janet was a game-changer for our startup. They took our vague ideas and turned them into a sleek, user-friendly product that our customers love. The attention to detail and creativity exceeded our expectations!",
+            "Janet transformed our vision into reality. Her design expertise, coupled with a deep understanding of our needs, resulted in a product that has significantly improved our user experience and engagement. Highly recommend!",
     },
     {
-        name: "kdsj fksjklf s",
-        position: "CEO, Sumi Empire",
-        rating: 4.0,
-        image: Case1,
+        name: "Nia Thompson",
+        position: "Software Engineer, Apex Technologies",
+        rating: 5.0,
+        image: Nia,
         feedback:
-            "Working with Janet was a game-changer for our startup. They took our vague ideas and turned them into a sleek, user-friendly product that our customers love. The attention to detail and creativity exceeded our expectations!",
+            "Janet's work is nothing short of exceptional. Her ability to blend aesthetics with functionality has not only elevated our brand's digital presence but also made a tangible impact on our customer satisfaction. Her professionalism and creativity are truly unmatched.",
     },
-    // Add more testimonials here
 ];
 
 const TestimonialCarousel = () => {

@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import jdLogo from "assets/images/jd-logo.svg";
+import Resume from "assets/Janet-resume.pdf";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
                                 smooth={true}
                                 offset={-50}
                                 duration={400}
-                                className=" p-3 px-6 transition-all duration-500 ease-in-out hover:cursor-pointer">
+                                className=" p-3 px-6 rounded-full hover:bg-zinc-700 transition-all duration-500 ease-in-out hover:cursor-pointer">
                                 Home
                             </Link>
                         </li>
@@ -28,7 +29,7 @@ const Navbar = () => {
                                 smooth={true}
                                 offset={-50}
                                 duration={400}
-                                className="p-3 px-6 transition-all duration-500 ease-in-out hover:cursor-pointer">
+                                className="p-3 px-6 rounded-full hover:bg-zinc-700 transition-all duration-500 ease-in-out hover:cursor-pointer">
                                 About
                             </Link>
                         </li>
@@ -40,7 +41,7 @@ const Navbar = () => {
                                 smooth={true}
                                 offset={-47}
                                 duration={400}
-                                className=" p-3 px-6 transition-all duration-500 ease-in-out hover:cursor-pointer">
+                                className=" p-3 px-6 rounded-full hover:bg-zinc-700 transition-all duration-500 ease-in-out hover:cursor-pointer">
                                 Work Experience
                             </Link>
                         </li>
@@ -51,7 +52,13 @@ const Navbar = () => {
                     </div>
                     <ul className="flex text-sm gap-4">
                         <li>
-                            <Link
+                            <a
+                                href={Resume}
+                                target="blank"
+                                className="p-3 px-6 rounded-full hover:bg-zinc-700 transition-all duration-500 ease-in-out">
+                                Resume
+                            </a>
+                            {/* <Link
                                 activeClass="active"
                                 to="resume"
                                 spy={true}
@@ -60,7 +67,7 @@ const Navbar = () => {
                                 duration={400}
                                 className=" p-3 px-6 transition-all duration-500 ease-in-out hover:cursor-pointer">
                                 Resume
-                            </Link>
+                            </Link> */}
                         </li>
                         <li>
                             <Link
@@ -70,7 +77,7 @@ const Navbar = () => {
                                 smooth={true}
                                 offset={-50}
                                 duration={400}
-                                className=" p-3 px-6 transition-all duration-500 ease-in-out hover:cursor-pointer">
+                                className=" p-3 px-6 rounded-full hover:bg-zinc-700 transition-all duration-500 ease-in-out hover:cursor-pointer">
                                 Project
                             </Link>
                         </li>
@@ -80,9 +87,9 @@ const Navbar = () => {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={-50}
+                                offset={-47}
                                 duration={400}
-                                className=" p-3 px-6 transition-all duration-500 ease-in-out hover:cursor-pointer">
+                                className=" p-3 px-6 rounded-full hover:bg-zinc-700 transition-all duration-500 ease-in-out hover:cursor-pointer">
                                 Contact
                             </Link>
                         </li>

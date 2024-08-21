@@ -1,8 +1,8 @@
 // const { default: ProjectCard } = require("./ProjectCard");
 import ProjectCard from "./ProjectCard";
-import Project1 from "assets/images/project-1.svg";
-import Project2 from "assets/images/project-2.svg";
-import Project3 from "assets/images/project-3.svg";
+import Project1 from "assets/images/project-1.webp";
+import Project2 from "assets/images/project-2.webp";
+import Project3 from "assets/images/project-3.webp";
 import "./Project.css";
 
 const Projects = () => {
@@ -11,11 +11,13 @@ const Projects = () => {
             image: Project1,
             title: "Pages by Dami",
             type: "Website",
+            link: "https://pagesbydami.printivo.com/",
         },
         {
             image: Project2,
             title: "Dannon",
             type: "Website",
+            link: "https://dacv.netlify.app/",
         },
         {
             image: Project3,

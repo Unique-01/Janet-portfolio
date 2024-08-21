@@ -1,14 +1,14 @@
 import "./Home.css";
-// import img from "assets/images/home.svg";
+import { useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import { TiStarFullOutline } from "react-icons/ti";
 import { MdOutlineArrowOutward } from "react-icons/md";
-
-
 import intro from "assets/images/intro.svg";
 import janet from "assets/images/janet.svg";
 
 const Home = () => {
+    const [hoveredButton, setHoveredButton] = useState("portfolio");
+
     return (
         <div name="home" className=" pt-24 container ">
             <div className="home ">
@@ -30,12 +30,48 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="relative">
-                        <img src={janet} alt="Janet" className="z-20 relative" />
+                        <img
+                            src={janet}
+                            alt="Janet"
+                            className="z-20 relative"
+                        />
                         <div className="semi "></div>
-                        <div className="absolute z-30 bottom-10 left-16">
-                            <div className="border rounded-full text-white p-2 flex items-center gap-3 backdrop-blur shadow-lg">
-                                <a href=" " className="py-3 px-7 bg-primary rounded-full flex items-center gap-2 font-medium ">Portfolio <MdOutlineArrowOutward className="text-2xl"/></a>
-                                <a href=" " className="p-3">Hire me</a>
+
+                        <div className="absolute z-30 bottom-10 left-14">
+                            <div className="border rounded-full text-white p-2 flex items-center gap-2 backdrop-blur shadow-lg">
+                                <a
+                                    href=" "
+                                    className={`p-3 rounded-full inline-flex items-center gap-2 font-medium transition-all ${
+                                        hoveredButton === "portfolio"
+                                            ? "px-7 bg-primary"
+                                            : ""
+                                    }`}
+                                    onMouseEnter={() =>
+                                        setHoveredButton("portfolio")
+                                    }>
+                                    Portfolio{" "}
+                                    {hoveredButton === "portfolio" && (
+                                        <MdOutlineArrowOutward className="text-2xl" />
+                                    )}
+                                </a>
+                                <a
+                                    href="mailto:Janetdaramola1@gmail.com"
+                                    className={`hover:px-7 hover:bg-primary rounded-full text-nowrap p-3 gap-2 inline-flex items-center transition-all ${
+                                        hoveredButton === "hireme"
+                                            ? "px-7 bg-primary"
+                                            : ""
+                                    }`}
+                                    onMouseEnter={() =>
+                                        setHoveredButton("hireme")
+                                    }
+                                    onMouseLeave={() =>
+                                        setHoveredButton("portfolio")
+                                    }>
+                                    Hire me{" "}
+                                    {hoveredButton === "hireme" && (
+                                        <MdOutlineArrowOutward className="text-2xl" />
+                                    )}
+                                </a>
                             </div>
                         </div>
                     </div>

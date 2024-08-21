@@ -12,7 +12,7 @@ const Discuss = () => {
     ];
 
     return (
-        <div>
+        <div name="contact">
             <div className="flex justify-center text-center py-16">
                 <div>
                     <h1 className="text-4xl font-semibold poppins dark">
@@ -21,7 +21,10 @@ const Discuss = () => {
                         <span className="text-primary">Let's Discuss</span>
                     </h1>
                     <div className="pt-5">
-                        <Button text="Contact Me" />
+                        <Button
+                            text="Contact Me"
+                            href="mailto:Janetdaramola1@gmail.com"
+                        />
                     </div>
                 </div>
             </div>
