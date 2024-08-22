@@ -13,6 +13,15 @@
     border-radius: 300px 300px 0 0;
     height: 250px;
     width: 500px;
+    /* height: 15em;
+    width: 30em; */
     top: 74%;
     left: 50%;
+}
+
+@media screen and (max-width:600px){
+    .semi{
+        height: 180px;
+        width: 360px;
+    }
 }

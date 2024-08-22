@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className="bg-dark text-white rounded-t-3xl">
             <div className="container">
-                <div className="py-14 pb-16 flex justify-between items-center ">
+                <div className="py-14 pb-16 lg:flex justify-between items-center space-y-5 ">
                     <h2 className="font-semibold text-5xl">
                         Lets Connect there
                     </h2>
@@ -23,7 +23,7 @@ const Footer = () => {
                     />
                 </div>
                 <hr className="pb-10 border-gray-600" />
-                <div className="flex gap-56">
+                <div className="lg:flex space-y-5 gap-56">
                     <div className="poppins mt-5">
                         <div className="inline-flex items-center gap-3">
                             <img src={jdLogo} alt="JD Logo" className="w-10" />
@@ -129,7 +129,7 @@ const Footer = () => {
                 <div className="py-8">
                     <hr className=" border-gray-600" />
                 </div>
-                <div className="text-xs flex justify-between pb-3">
+                <div className="text-xs lg:flex space-y-4 justify-between pb-3">
                     <p>Copyright &copy; 2023 JanetD. All Rights Reserved.</p>
                     <p>User Terms & Conditions | Privacy Policy</p>
                 </div>

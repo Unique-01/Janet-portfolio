@@ -36,7 +36,7 @@ const Projects = () => {
                         Live <span className="text-primary">Projects</span>
                     </h1>
                 </div>
-                <div className="grid grid-cols-3 gap-5 px-5">
+                <div className="md:grid grid-cols-3 gap-5 px-5 space-y-8 md:space-y-0">
                     {projects.map((project, index) => (
                         <ProjectCard key={index} project={project} />
                     ))}

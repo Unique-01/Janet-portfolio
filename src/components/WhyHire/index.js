@@ -4,15 +4,15 @@ import "./WhyHire.css";
 const WhyHire = () => {
     return (
         <div className="bg-secondary custom-radius py-14">
-            <div className="grid grid-cols-2 items-center container">
-                <div>
+            <div className="md:grid grid-cols-2 items-center container">
+                <div className="hidden md:block">
                     <img
                         src={Hire}
                         alt="Hire me"
                         className="w-[450px] ml-auto"
                     />
                 </div>
-                <div className="w-2/3 mr-auto">
+                <div className="md:w-2/3 md:mr-auto">
                     <h2 className="text-5xl font-semibold dark mb-7">
                         Why <span className="text-primary">Hire Me</span>?
                     </h2>

@@ -7,33 +7,33 @@ const Experience = () => {
                         My <span className="text-primary">Work Experience</span>
                     </h2>
                 </div>
-                <div class="relative flex justify-center poppins ">
-                    <div class="w-1/2 space-y-24 text-left">
+                <div class="relative flex justify-center poppins space-x-3 ">
+                    <div class="w-1/2 space-y-44 md:space-y-24 text-left">
                         <div>
-                            <h2 class="text-3xl font-semibold text-gray-900">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">
                                 Printivo
                             </h2>
-                            <p class="text-gray-600">
+                            <p class="text-gray-600 ">
                                 October 2023 - March 2024
                             </p>
                         </div>
 
                         <div>
-                            <h2 class="text-3xl font-semibold text-gray-900">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">
                                 Black Reverie
                             </h2>
-                            <p class="text-gray-600">June 2022 - July 2023</p>
+                            <p class="text-gray-600 ">June 2022 - July 2023</p>
                         </div>
 
                         <div>
-                            <h2 class="text-3xl font-semibold text-gray-900">
+                            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">
                                 Ennovate Lab
                             </h2>
-                            <p class="text-gray-600">Nov 2020 - Nov 2021</p>
+                            <p class="text-gray-600 ">Nov 2020 - Nov 2021</p>
                         </div>
                     </div>
 
-                    <div class="relative right-20">
+                    <div class="hidden md:block relative right-20">
                         <div class="relative flex flex-col items-center">
                             <div className="border-2 border-dashed border-gray-600 rounded-full">
                                 <div class="w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></div>
@@ -51,12 +51,12 @@ const Experience = () => {
                         </div>
                     </div>
 
-                    <div class="w-1/2 space-y-12 pl-40">
+                    <div class="w-1/2 space-y-12 lg:pl-40">
                         <div>
-                            <h3 class="text-3xl font-semibold text-gray-900">
+                            <h3 class="text-2xl md:text-3xl font-semibold text-gray-900">
                                 Product Designer
                             </h3>
-                            <p class="text-gray-600">
+                            <p class="text-gray-600 text-sm md:text-base">
                                 Designed the pages by Dami platform that
                                 streamlined the sales process between Printivo
                                 and Pages by Dami, improving revenue.
@@ -64,10 +64,10 @@ const Experience = () => {
                         </div>
 
                         <div>
-                            <h3 class="text-3xl font-semibold text-gray-900">
+                            <h3 class="text-2xl md:text-3xl font-semibold text-gray-900">
                                 UI/UX Designer
                             </h3>
-                            <p class="text-gray-600">
+                            <p class="text-gray-600 text-sm md:text-base">
                                 Created intuitive and visually appealing
                                 interfaces that enhance user experience by
                                 ensuring ease of use, and overall satisfaction.
@@ -75,10 +75,10 @@ const Experience = () => {
                         </div>
 
                         <div>
-                            <h3 class="text-3xl font-semibold text-gray-900">
+                            <h3 class="text-2xl md:text-3xl font-semibold text-gray-900">
                                 Creative Designer
                             </h3>
-                            <p class="text-gray-600">
+                            <p class="text-gray-600 text-sm md:text-base">
                                 Created visually compelling designs across
                                 various media to communicate ideas, evoke
                                 emotions, and solve problems.

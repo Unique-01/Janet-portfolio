@@ -12,7 +12,7 @@ const TestimonialCard = ({ testimonial, onClick }) => {
                     onClick={onClick}></div>
                 <div className="flex justify-between">
                     <div>
-                        <div className="flex items-center mb-4">
+                        <div className="md:flex items-center mb-4">
                             <img
                                 src={testimonial.image}
                                 alt={testimonial.name}

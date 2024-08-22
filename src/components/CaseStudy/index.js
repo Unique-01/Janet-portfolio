@@ -31,7 +31,7 @@ const CaseStudy = () => {
                     Case <span className="text-primary">Studies</span>
                 </h2>
             </div>
-            <div className="grid grid-cols-3 gap-20 px-16 mt-14">
+            <div className="md:grid grid-cols-3 gap-20 px-8 md:px-16 mt-14 space-y-8 md:space-y-0">
                 {caseStudies.map((caseStudy, index) => (
                     <ProjectCard key={index} project={caseStudy} />
                 ))}

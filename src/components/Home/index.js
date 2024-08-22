@@ -10,34 +10,34 @@ const Home = () => {
     const [hoveredButton, setHoveredButton] = useState("portfolio");
 
     return (
-        <div name="home" className=" pt-24 container ">
+        <div name="home" className="pt-12 md:pt-24 container ">
             <div className="home ">
                 <div className="flex justify-center  ">
                     <img
                         src={intro}
                         alt="Introduction"
-                        className="h-56 absolute"
+                        className="h-56 absolute z-10"
                     />
                 </div>
-                <div className="relative top-20 grid grid-cols-3 items-center ">
-                    <div className="about poppins pr-28">
+                <div className="relative top-24 lg:top-20 md:grid grid-cols-3 items-center ">
+                    <div className="about poppins relative lg:pr-28 top-16 md:top-1 lg:top-0">
                         <FaQuoteLeft />
-                        <p className="text-sm mt-3">
+                        <p className="relative text-sm mt-3 z-30 ">
                             I’m a creative product designer With experience in
                             designing intuitive and engaging digital products, a
                             keen eye for detail and a passion for creating
                             user-centric solutions.
                         </p>
                     </div>
-                    <div className="relative">
+                    <div className="relative top-8 md:top-0">
                         <img
                             src={janet}
                             alt="Janet"
-                            className="z-20 relative"
+                            className="z-20 relative left-10 md:left-0 h-80 lg:h-full"
                         />
-                        <div className="semi "></div>
+                        <div className="semi"></div>
 
-                        <div className="absolute z-30 bottom-10 left-14">
+                        <div className="absolute z-30 bottom-5 md:bottom-10 left-14 md:left-0 lg:left-14">
                             <div className="border rounded-full text-white p-2 flex items-center gap-2 backdrop-blur shadow-lg">
                                 <a
                                     href=" "
@@ -75,7 +75,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-end text-end relative -top-10">
+                    <div className="flex justify-end text-end relative -top-60 md:-top-0 lg:-top-10">
                         <div className="">
                             <div className="flex mb-3">
                                 <TiStarFullOutline className="star" />

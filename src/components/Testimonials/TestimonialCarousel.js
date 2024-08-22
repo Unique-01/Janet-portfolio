@@ -54,7 +54,7 @@ const TestimonialCarousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: "22%",
+        centerPadding: "18%",
         arrows: false,
     };
 
