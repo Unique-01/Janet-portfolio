@@ -4,7 +4,10 @@ const ProjectCard = ({ project }) => {
     return (
         <div className="epilogue">
             <div>
-                <a href={project.link} target="blank">
+                <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <img src={project.image} alt={project.title} className="" />
                 </a>
             </div>
@@ -12,7 +15,8 @@ const ProjectCard = ({ project }) => {
                 <a
                     href={project.link}
                     className="flex items-center gap-3 font-semibold underline"
-                    target="blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     {project.title} <HiArrowRight className="text-2xl" />
                 </a>
                 <p className="text-sm mt-1">{project.type}</p>
