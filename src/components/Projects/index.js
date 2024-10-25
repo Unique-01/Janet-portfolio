@@ -23,6 +23,7 @@ const Projects = () => {
             image: Project3,
             title: "ACME Website",
             type: "Website",
+            link: "https://acme-software-lab.vercel.app",
         },
     ];
 
